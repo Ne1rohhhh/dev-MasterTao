@@ -7,21 +7,50 @@
         .container {
             display: flex;
             padding-top: 18px;
-            padding-bottom: 39px;
+            padding-bottom: 12px;
         }
 
         .logo {
             max-width: 128px;
+            z-index: 1;
         }
-    }
-    
-    header {
+
         .mobile-container {
-            display: none;
+            position: absolute;
+			flex-direction: column;
+            background-color: $bg-secondary;
+            z-index: 1;
+            left: 0;
+            right: 0;
+            top: 69px;
+            transition: .3s;
+            transform: translate(-100%, 0);
+            box-shadow: 14px 22px 40px #1e234247;
+
+            &.show {
+                transform: translate(0, 0);
+            }
+
+            nav {
+                flex-direction: column;
+                margin-top: 37px;
+                margin-bottom: 34px;
+                gap: 11px;
+
+                a {
+                    font-weight: 400;
+                    font-size: 24px;
+                    line-height: 2.22;
+                }
+            }
+
+            .btn-primary {
+                padding: 23px 85px;
+                margin: 0 40px 60px;
+                white-space: nowrap;
+            }
         }
     }
 
-   
-    
 }
 

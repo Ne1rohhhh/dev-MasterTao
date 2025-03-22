@@ -242,13 +242,13 @@ ul {
 
 .btn {
     font-weight: 600;
-    font-size: 15px;
+    font-size: 16px;
     line-height: 146%;
     border-radius: 90px;
     padding: 13px 17px;
     display: inline-flex;
     align-items: center;
-    letter-spacing: 0.6px;
+    letter-spacing: 0;
 
     &:hover {
         .icon {
@@ -577,3 +577,27 @@ ul.slick-dots {
 .has-bg {
     @include default-bg-lg;
 }
+
+body.overflow-hidden {
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vw;
+            background-color: #0000008c;
+            backdrop-filter: blur(4px);
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vw;
+            background-color: #0000008c;
+            backdrop-filter: blur(4px);
+        }
+    }
