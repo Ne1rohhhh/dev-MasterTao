@@ -1,4 +1,27 @@
 @media screen and (max-width: 1024px) {
-}
+    .container {
+        padding: 0 20px;
+    }
 
+    header {
+        .container {
+            display: flex;
+            padding-top: 18px;
+            padding-bottom: 39px;
+        }
+
+        .logo {
+            max-width: 128px;
+        }
+    }
+    
+    header {
+        .mobile-container {
+            display: none;
+        }
+    }
+
+   
+    
+}
 

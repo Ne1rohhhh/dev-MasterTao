@@ -1,8 +1,67 @@
-header{
-	height: 7vh;
-	padding: 15px 0;
-	background: #222;
-	a {
-		color: #fff;
+header {
+	.container {
+		display: flex;
+		padding-top: 25px;
+		padding-bottom: 39px;
 	}
+
+	.btn {
+		padding: 13px 21px;
+	}
+
+	.mobile-container {
+		display: flex;
+		width: 100%;
+	
+		nav {
+			display: flex;
+			gap: 45px;
+			align-items: center;
+			margin: 0 auto;
+
+			a {
+				color: $text-color;
+				text-decoration: none;
+				
+				&:hover {
+					color: $color-primary;
+				}
+			}
+		}
+	}
+
+	
+	.btn-burger {
+		padding: 0;
+	}
+}
+
+.btn-burger {
+    margin-left: auto;
+    position: relative;
+    border: none;
+	top: 6px;
+
+    background: #fff;
+    height: 2px;
+    width: 28px;
+    display: inline-block;
+
+    &::before,
+    &::after {
+        content: "";
+        background: #fff;
+        height: 2px;
+        width: 28px;
+        position: absolute;
+        left: 0;
+    }
+
+    &::before {
+        top: 12px;
+    }
+
+    &::after {
+        top: 24px;
+    }
 }
