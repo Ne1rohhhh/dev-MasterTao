@@ -24,3 +24,26 @@ function writeConsole() {
 buttonBurger.addEventListener('click', writeConsole);
 */
 
+const swiper = new Swiper('.slider-info', {  
+    spaceBetween: 12,
+    loop: true,
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+   
+    navigation:  {
+      enabled: false
+    },
+
+    breakpoints: {
+      992: {
+        spaceBetween: 40,
+        navigation: {
+          enabled: true,
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+      }
+    }
+});
