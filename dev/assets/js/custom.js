@@ -1,14 +1,22 @@
 const buttonBurger = document.querySelector('.btn-burger');
 const mobileContainer = document.querySelector('.mobile-container');
 const bodyNoScroll = document.querySelector('body');
+const main = document.querySelector('main');
 
 function checkClass() {
     mobileContainer.classList.toggle('show');
     bodyNoScroll.classList.toggle('overflow-hidden');
     buttonBurger.classList.toggle('active');
+    main.classList.toggle('body-hidden');
 }
 
 buttonBurger.addEventListener('click', checkClass);
+
+/*
+if (main.classList.contains('overflow-hidden')) {
+  main.classList.addClass('body-hidden')
+}
+*/
 
 /*
 buttonBurger.addEventListener('click', function() {

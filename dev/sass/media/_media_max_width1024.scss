@@ -52,5 +52,64 @@
         }
     }
 
-}
+    .body-hidden {
+        opacity: 0;
+    }
 
+
+    .first-screen {
+        margin: 0;
+
+        .slider-info {
+            margin: 0;
+            
+            .swiper-pagination {
+                bottom: 96px;
+            }
+
+            .swiper-slide {
+                border-radius: 0px;
+                padding: 0;
+                background-image: url(../../assets/img/first-screen-mobile-1.png) !important;
+                background-position: -11px -32px;
+
+                .container {
+                    padding: 0;
+                    
+                    .banner {
+                        max-width: 335px;
+                        max-height: 220px;
+                        margin: 149px 20px 242px;
+    
+                        .banner-title {
+                            font-weight: 700;
+                            font-size: 32px;
+                            line-height: 1.26;
+                            text-align: center;
+                            margin-bottom: 10px;
+                            text-transform: uppercase;
+                        }
+
+                        .banner-description {
+                            font-weight: 300;
+                            font-size: 16px;
+                            line-height: 1.36;
+                            margin-bottom: 18px;
+                            text-align: center;
+                            padding-left: 15px;
+                        }
+
+                        .btn-primary {
+                            margin-left: 20px;
+                            padding: 19px 31px;
+                            max-width: 295px;
+                            width: 100%;
+                            gap: 7px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+}
