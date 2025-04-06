@@ -1,4 +1,9 @@
 @media screen and (max-width: 1024px) {
+    .slider-info.swiper-initialized.swiper-horizontal.swiper-backface-hidden.swiper-navigation-disabled {
+        max-height: 649px;
+    }
+    
+    
     .container {
         padding: 0 20px;
     }
@@ -7,7 +12,7 @@
         .container {
             display: flex;
             padding-top: 18px;
-            padding-bottom: 12px;
+            padding-bottom: 18px;
         }
 
         .logo {
@@ -59,19 +64,24 @@
 
     .first-screen {
         margin: 0;
+        margin-bottom: 54px!important;
 
         .slider-info {
             margin: 0;
             
             .swiper-pagination {
-                bottom: 96px;
+                bottom: 102px;
+            }
+
+            .first-slide {
+                background-image: url(../../assets/img/first-screen-mobile-1.png) !important;
             }
 
             .swiper-slide {
                 border-radius: 0px;
                 padding: 0;
-                background-image: url(../../assets/img/first-screen-mobile-1.png) !important;
                 background-position: -11px -32px;
+                z-index: 2;
 
                 .container {
                     padding: 0;
@@ -79,7 +89,7 @@
                     .banner {
                         max-width: 335px;
                         max-height: 220px;
-                        margin: 149px 20px 242px;
+                        margin: 136px auto 242px;
     
                         .banner-title {
                             font-weight: 700;
@@ -110,6 +120,57 @@
                 }
             }
         }
+
+        .swiper-button-prev::after,
+        .swiper-button-next::after {
+            display: none;
+        }
+    }   
+
+    .template-title {
+        padding-bottom: 45px;
+        margin-bottom: 29px!important;
+
+        h2 {
+            font-size: 24px;
+            margin-bottom: 6px;
+        }
+
+        h3 {
+            font-weight: 400;
+            font-size: 16px;
+        }
+
+        &:after {
+            bottom: 34px;
+
+            top: 113px;
+            width: 87px;
+            height: 2.5px;
+        }
+
+        &.case-3 {
+            &:after {
+                display: block;
+            }
+            text-align: center;
+            margin-right: auto;
+            margin-left: auto;
+            h2 {
+                &:after {
+                    display: none;
+                }
+            }
+        }
     }
-    
+
+
+    .calculation-form {
+        margin: 0 auto;
+    }
+
+    .calculation-decoration {
+        display: none;
+    }
+
 }

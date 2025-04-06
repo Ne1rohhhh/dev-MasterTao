@@ -1,0 +1,85 @@
+.calculation {
+    z-index: 2;
+    .container {
+        padding-left: 17px;
+        position: relative;
+    }
+}
+
+.calculation-form {
+    padding: 47px 50px 61px;
+    border-radius: 20px;
+    background-color: $bg-secondary;
+    box-shadow: 5px 15px 40px 0px #0B186152;
+    max-width: 626px;
+    width: 100%;
+
+    .form-row {
+        display: flex;
+        gap: 30px;
+
+        .form-column {
+            width: 100%;
+
+            .input-box {
+                margin: -1px 0 20px;
+
+            }
+
+            .control-box {
+                margin-bottom: 14px;
+            }
+
+            .control-box:first-child {
+                margin-top: 19px;
+            }
+        }
+    }
+
+    
+}
+
+[type="file"] {
+    display: none;
+
+    + label {
+        font-size: 15px;
+        border: 1px dashed rgba(255, 255, 255, 0.26);
+        width: 100%;
+        text-align: center;
+        padding: 10px;
+        border-radius: 10px;
+        cursor: pointer;
+
+        &:hover {
+            border-color: $color-secondary;
+            color: $color-secondary;
+            transition: .3s ;
+        }
+    }
+}
+
+.file-name {
+    font-size: 15px;
+    line-height: 1;
+    margin: -3px 0 15px 0;
+}
+
+
+.calculation-decoration {
+    position: absolute;
+    left: 613px;
+    bottom: -113px;
+    max-width: 560px;
+    width: 29.167vw;
+    min-width: 370px;
+}
+
+
+.btn-mt-38px {
+    margin-top: 38px;
+}
+
+.mt-8px {
+    margin-top: 8px;
+}

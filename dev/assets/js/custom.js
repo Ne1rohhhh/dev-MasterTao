@@ -55,3 +55,38 @@ const swiper = new Swiper('.slider-info', {
       }
     }
 });
+
+const typeFile = document.querySelectorAll('.custom-file')
+
+
+
+typeFile.forEach(item => {
+  item.addEventListener('change', () => {
+    const fileName = item.closest('.control-box').querySelector('.file-name')  
+    fileName.innerHTML = item.files[0].name;
+
+    
+    const btnPrimary = document.querySelector('.btn-mt-8px')
+    const file = item.files[0];
+
+    if (file) {
+      fileName.innerHTML = file.name;
+      btnPrimary.classList.add('mt-8px');
+      btnPrimary.classList.remove('mt-38px');
+      console.log('додано клас');
+    } 
+  
+  /*else {
+      fileName.innerHTML = '';
+      btnPrimary.classList.remove('mt-38px');
+  }*/
+  })
+})
+
+
+
+
+/*else {
+  
+  submitBtn.style.marginTop = '10px'; // 
+}*/
